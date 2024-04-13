@@ -29,7 +29,6 @@
       color: #fff; /* Colore dei link bianco */
     }
     img {
-      src=
       margin-top: 10px; /* Spazio tra le immagini */
       width: 150px; /* Dimensioni delle immagini */
       height: auto;
@@ -67,6 +66,42 @@
     .product-container {
       text-align: center;
     }
+    /* Dropdown menu styles */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .dropbtn {
+      background-color: #433d3c;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    .dropbtn:hover {
+      background-color: #574f4d;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -79,6 +114,15 @@
     <div>
       <a href="https://www.AraBeauty.com">Chi siamo</a>
       <a href="geo:45.4233834,9.2636990">Dove siamo</a>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="#">Mission</a>
+        <a href="#">Prodotti</a>
+        <a href="#">Contatti</a>
+        <a href="#">Sedi</a>
+      </div>
     </div>
     <div>
       <!-- Immagine di esempio -->

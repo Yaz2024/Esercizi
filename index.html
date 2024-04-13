@@ -27,7 +27,8 @@
     }
     .info a {
       color: #fff; /* Colore dei link bianco */
-    <img {
+    }
+    img {
       src=
       margin-top: 10px; /* Spazio tra le immagini */
       width: 150px; /* Dimensioni delle immagini */
@@ -47,14 +48,24 @@
       margin-bottom: 10px; /* Spazio tra le recensioni */
     }
     .product-list {
-      display: flex;
-      justify-content: space-around;
       list-style-type: none;
       padding: 0;
+      text-align: center;
     }
     .product-list-item {
+      display: inline-block;
+      margin: 0 10px;
       text-align: center;
-      margin-top: 10px;
+    }
+    .product-list-item img {
+      width: 150px; /* Dimensioni delle immagini */
+      height: auto;
+    }
+    .product-name {
+      font-weight: bold; /* Grassetto */
+    }
+    .product-container {
+      text-align: center;
     }
   </style>
 </head>
@@ -112,25 +123,28 @@
 
     <section class="section">
       <h3 style="color: #433d3c;">Prodotti Cosmetici</h3>
-      <ul class="product-list">
-        <li class="product-list-item">
-          <img src="https://i.pinimg.com/564x/2e/fe/86/2efe86db9fab6993b638571ac14d4c57.jpg" alt="Scrub al sapone nero">
-          <p>Scrub al sapone nero</p>
-        </li>
-        <li class="product-list-item">
-          <img src="https://i.pinimg.com/564x/bf/e4/9e/bfe49e7b518df1988f82ccd8219a0387.jpg" alt="Siero viso argan oil">
-          <p>Siero viso argan oil</p>
-        </li>
-        <li class="product-list-item">
-          <img src="https://i.pinimg.com/564x/38/89/c9/3889c9a998da6ca04d0ea873be834422.jpg" alt="Shampoo chiarificante all'argilla verde">
-          <p>Shampoo chiarificante all'argilla verde</p>
-        </li>
-      </ul>
+      <div class="product-container">
+        <ul class="product-list">
+          <li class="product-list-item">
+            <img src="https://i.pinimg.com/564x/2e/fe/86/2efe86db9fab6993b638571ac14d4c57.jpg" alt="Scrub al sapone nero">
+            <p class="product-name">Scrub al sapone nero</p>
+          </li>
+          <li class="product-list-item">
+            <img src="https://i.pinimg.com/564x/bf/e4/9e/bfe49e7b518df1988f82ccd8219a0387.jpg" alt="Siero viso argan oil">
+            <p class="product-name">Siero viso argan oil</p>
+          </li>
+          <li class="product-list-item">
+            <img src="https://i.pinimg.com/564x/38/89/c9/3889c9a998da6ca04d0ea873be834422.jpg" alt="Shampoo chiarificante all'argilla verde">
+            <p class="product-name">Shampoo chiarificante all'argilla verde</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="section">
       <h3 style="color: #433d3c;">About the Founder</h3>
-      <p style="color: #433d3c;">La linea di cosmetici AraBeauty è nata dalla mia profonda connessione con la mia seconda cultura araba e dalla volontà di valorizzare la bellezza attraverso ingredienti naturali e tradizionali. Sono stata ispirata dalla ricca tradizione cosmetica araba e ho unito questo patrimonio con la mia passione per la creazione di prodotti che siano efficaci e rispettosi dell'ambiente. Con AraBeauty, mi impegno a promuovere l'empowerment delle donne e a celebrare la loro bellezza in tutte le sue forme.</p>
+      <img src="https://i.pinimg.com/564x/22/a6/06/22a606397c90c3bcba32e918e58368ee.jpg" alt="Founder Image" style="display: block; margin: 0 auto;">
+      <p style="color: #433d3c; text-align: center;">La linea di cosmetici AraBeauty è nata dalla mia profonda connessione con la mia seconda cultura araba e dalla volontà di valorizzare la bellezza attraverso ingredienti naturali e tradizionali. Sono stata ispirata dalla ricca tradizione cosmetica araba e ho unito questo patrimonio con la mia passione per la creazione di prodotti che siano efficaci e rispettosi dell'ambiente. Con AraBeauty, mi impegno a promuovere l'empowerment delle donne e a celebrare la loro bellezza in tutte le sue forme.</p>
     </section>
   </main>
 

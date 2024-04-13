@@ -2,6 +2,7 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="AraBeauty - Cosmesi Naturale. Scopri la bellezza ispirata alla tradizione cosmetica araba.">
   <title>AraBeauty</title>
   <style>
     body {
@@ -13,12 +14,27 @@
       text-align: center;
     }
     h1, h2, h3 {
-      color: rgba(193, 120, 57, 0.782);
+      color: #433d3c; /* Beige scuro */
     }
     .info {
-      background-color: beige;
+      background-color: #433d3c; /* Beige scuro */
+      color: #fff; /* Testo bianco */
       padding: 10px;
       text-align: center;
+      display: flex; /* Layout delle colonne */
+      flex-direction: column; /* Colonne verticali */
+      align-items: center; /* Allinea al centro */
+    }
+    .info a {
+      color: #fff; /* Colore dei link bianco */
+    <img {
+      src=
+      margin-top: 10px; /* Spazio tra le immagini */
+      width: 150px; /* Dimensioni delle immagini */
+      height: auto;
+    }
+    .contact-info {
+      margin-top: 20px;
     }
     .section {
       margin: 20px auto;
@@ -26,52 +42,101 @@
       background-color: #f5f5f5;
       width: 80%;
     }
-    .contact-info {
-      margin-top: 20px;
+    .review {
+      font-style: italic; /* Testo in corsivo */
+      margin-bottom: 10px; /* Spazio tra le recensioni */
+    }
+    .product-list {
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+      padding: 0;
+    }
+    .product-list-item {
+      text-align: center;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="banner">
+  <header class="banner">
     <h1>AraBeauty</h1>
     <h2>Cosmesi Naturale</h2>
-  </div>
+  </header>
 
-  <div class="info">
-    <a href="https://www.AraBeauty.com">Chi siamo</a>
-    <a href="geo:45.4233834,9.2636990">Dove siamo</a>
-    <img src=mappa 2.jpg"/>
-
+  <nav class="info">
+    <div>
+      <a href="https://www.AraBeauty.com">Chi siamo</a>
+      <a href="geo:45.4233834,9.2636990">Dove siamo</a>
+    </div>
+    <div>
+      <!-- Immagine di esempio -->
+      <img src="https://i.pinimg.com/564x/89/21/6e/89216e5e87887f16c864de249b4b9bde.jpg" alt="Prodotto 2">
+    </div>
     <div class="contact-info">
       <p>Telefono: +39 328 789 5652</p>
       <p>Email: info@arabeauty.com</p>
     </div>
-  </div>
+  </nav>
 
-  <div class="section">
-    <h3 id="chisiamo">About us</h3>
-    <p>Benvenuti in AraBeauty, la linea di cosmetici ispirata alla straordinaria bellezza e all'eleganza della tradizione cosmetica araba. Siamo mossi dalla passione di valorizzare non solo la bellezza esteriore, ma anche il benessere delle donne. Con AraBeauty, non solo ti offriamo prodotti di alta qualità, ma ti invitiamo a fare parte di una missione che va oltre la routine di bellezza quotidiana.</p>
-    
-    <p>Unisciti a noi nella nostra community esclusiva, dove condivideremo non solo segreti di bellezza, ma anche storie di donne straordinarie e il potere trasformativo che risiede in ognuna di loro. Insieme, possiamo contribuire a creare un mondo in cui la bellezza, la salute e l'empowerment delle donne sono valorizzati e celebrati. Con AraBeauty, intrighiamo il mondo, una persona alla volta.</p>
-  </div>
+  <main>
+    <section class="section">
+      <h3 style="color: #433d3c;">About AraBeauty</h3>
+      <p style="color: #433d3c;">Benvenuti in AraBeauty, la linea di cosmetici ispirata alla straordinaria bellezza e all'eleganza della tradizione cosmetica araba. Siamo mossi dalla passione di valorizzare non solo la bellezza esteriore, ma anche il benessere delle donne. Con AraBeauty, non solo ti offriamo prodotti di alta qualità, ma ti invitiamo a fare parte di una missione che va oltre la routine di bellezza quotidiana.</p>
+      <p style="color: #433d3c;">Unisciti a noi nella nostra community esclusiva, dove condivideremo non solo segreti di bellezza, ma anche storie di donne straordinarie e il potere trasformativo che risiede in ognuna di loro. Insieme, possiamo contribuire a creare un mondo in cui la bellezza, la salute e l'empowerment delle donne sono valorizzati e celebrati. Con AraBeauty, intrighiamo il mondo, una persona alla volta.</p>
+    </section>
 
-  <div class="section">
-    <h3>Recensioni Clienti</h3>
-    <p>Le recensioni dei nostri clienti sono un testamento della qualità dei nostri prodotti e del nostro servizio clienti eccezionale.</p>
-    <!-- SARA: Da quando uso AraBeauty la mia pelle è ringiovanita, i miei capelli rinati e il mio portafoglio ringrazia. -->
-     <!-- GIORGIO: Da uomo ero sempre scettico nell'usare prodotti di bellezza ma AraBeauty va oltre alla semplice cosmetica estetica. Ogni acquisto mi permette di essere utile alla società e all'ambiente. La community AraBeauty è eccezionale e permette a tutti noi clienti di essere costantemente aggiornati sui progressi che stiamo apportando alle comunità con cui collabora, sugli ingredienti usati, sui modi migliori di apllicazione ecc -->
-  </div>
+    <section class="section">
+      <h3 style="color: #433d3c;">Recensioni dei nostri clienti</h3>
+      <ul>
+        <li class="review">
+          <strong>Sara:</strong> Da quando uso il prodotto all'olio di argan di AraBeauty, la mia pelle è diventata incredibilmente luminosa e idratata. Consiglio vivamente!
+        </li>
+        <li class="review">
+          <strong>Giorgio:</strong> Ho provato il trattamento all'argilla per i capelli e devo dire che sono rimasto impressionato. I miei capelli sono diventati più morbidi e voluminosi. Ottimo prodotto!
+        </li>
+        <li class="review">
+          <strong>Emma:</strong> Il profumo oud arabo di AraBeauty è semplicemente meraviglioso. Mi fa sentire elegante e sofisticato ogni volta che lo indosso. È diventato il mio profumo preferito!
+        </li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h3> Info sugli Ingredienti</h3>
-    <p>AraBeauty utilizza solo ingredienti naturali e rispettosi dell'ambiente. Approfondiremo l'efficacia e i benefici dell'olio di argan e dell'argilla nei nostri prodotti.</p>
-    <!-- L'olio di Argan presente nelle nostre creme è stato attentamente coltivato dalle comunità dell'Atlas con cui AraBeauty collabora e incentiva. Ogni acquisto contribuisce alla salvaguardia di questa pianta e alla crescita economica di queste comunità rurali: concediti la bellezza aiutando il Pianeta. -->
-  </div>
+    <section class="section">
+      <h3 style="color: #433d3c;">Info sugli Ingredienti</h3>
+      <ul style="color: #433d3c;">
+        <li>L'olio di argan è noto per le sue proprietà idratanti ed anti-invecchiamento.</li>
+        <li>L'argilla è efficace nel purificare la pelle e regolare la produzione di sebo.</li>
+        <li>Il profumo oud arabo è estratto da legni rari e ha un profumo ricco e sensuale.</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h3>About us</h3>
-    <p>La linea di cosmetici AraBeauty è nata dalla mia profonda connessione con la mia seconda cultura araba e dalla volontà di valorizzare la bellezza attraverso ingredienti naturali e tradizionali. Sono stato ispirata dalla ricca tradizione cosmetica araba e ho unito questo patrimonio con la mia passione per la creazione di prodotti che siano efficaci e rispettosi dell'ambiente. Con AraBeauty, mi impegno a promuovere l'empowerment delle donne e a celebrare la loro bellezza in tutte le sue forme.</p>
-  </div>
+    <section class="section">
+      <h3 style="color: #433d3c;">Prodotti Cosmetici</h3>
+      <ul class="product-list">
+        <li class="product-list-item">
+          <img src="https://i.pinimg.com/564x/2e/fe/86/2efe86db9fab6993b638571ac14d4c57.jpg" alt="Scrub al sapone nero">
+          <p>Scrub al sapone nero</p>
+        </li>
+        <li class="product-list-item">
+          <img src="https://i.pinimg.com/564x/bf/e4/9e/bfe49e7b518df1988f82ccd8219a0387.jpg" alt="Siero viso argan oil">
+          <p>Siero viso argan oil</p>
+        </li>
+        <li class="product-list-item">
+          <img src="https://i.pinimg.com/564x/38/89/c9/3889c9a998da6ca04d0ea873be834422.jpg" alt="Shampoo chiarificante all'argilla verde">
+          <p>Shampoo chiarificante all'argilla verde</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h3 style="color: #433d3c;">About the Founder</h3>
+      <p style="color: #433d3c;">La linea di cosmetici AraBeauty è nata dalla mia profonda connessione con la mia seconda cultura araba e dalla volontà di valorizzare la bellezza attraverso ingredienti naturali e tradizionali. Sono stata ispirata dalla ricca tradizione cosmetica araba e ho unito questo patrimonio con la mia passione per la creazione di prodotti che siano efficaci e rispettosi dell'ambiente. Con AraBeauty, mi impegno a promuovere l'empowerment delle donne e a celebrare la loro bellezza in tutte le sue forme.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 AraBeauty</p>
+  </footer>
 </body>
 </html>
 

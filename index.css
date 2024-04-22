@@ -1,4 +1,87 @@
-/* Dropdown menu styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  background-image: url('https://i.pinimg.com/originals/45/8d/59/458d597c3f1bc1fe1d5c84f9e8ed9a54.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 36px;
+  font-style: italic;
+}
+
+h2, h3 {
+  color: #433d3c; 
+}
+
+.info {
+  background-color: #433d3c; 
+  color: #fff; 
+  padding: 10px;
+  text-align: center;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.info a {
+  color: #fff; 
+}
+
+img {
+  margin-top: 10px; 
+  width: 150px; 
+  height: auto;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.section {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  width: 80%;
+}
+
+.review {
+  font-style: italic; 
+  margin-bottom: 10px; 
+  text-align: center; 
+}
+
+.product-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  overflow-x: auto; 
+  white-space: nowrap; 
+
+.product-list-item {
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+  vertical-align: top; 
+
+.product-list-item img {
+  width: 200px; 
+  height: auto;
+}
+
+.product-name {
+  font-weight: bold; 
+}
+
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -40,3 +123,11 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+footer {
+  background-color: #433d3c;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+

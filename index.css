@@ -21,10 +21,10 @@
     .info {
       background-color: #433d3c; 
       color: #fff; 
-      padding: 10px 20px; /* Aggiunta spaziatura interna */
+      padding: 10px 20px; 
       display: flex; 
       justify-content: space-between; 
-      align-items: center; /* Centra verticalmente gli elementi */
+      align-items: center;
     }
     .dropdown {
       position: relative;
@@ -46,13 +46,11 @@
       position: absolute;
       background-color: #f5f5dc;
       min-width: 100px;
-      z-index: 1; /* Imposta la profondità dello z-index per sovrapporre il contenuto */
     }
     .dropdown-content a {
       color: black;
-      padding: 12px 16px; /* Modifica spaziatura */
+      padding: 12px 16px; 
       display: block;
-      text-decoration: none; /* Rimuove il sottolineato */
     }
     .dropdown-content a:hover {
       background-color: #dcdcbf;

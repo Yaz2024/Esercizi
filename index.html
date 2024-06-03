@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="it">
 <head> 
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>AraBeauty</title>
 <link rel="stylesheet"
       href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="banner">
@@ -78,12 +81,33 @@
           </li>
         </ul>
       </div>
-    </section>
+ </div>
+  
+</section>
     <section class="section">
       <h3 style="color: #A89984;">About the Founder</h3>
       <img src="https://i.pinimg.com/564x/c3/80/28/c38028e91c3cfecafd3f128aa86898b8.jpg" alt="Immagine fondatrice" style="display: block; margin: 0 auto;width:20%;border-radius: 50%" >
       <p style="color: #433d3c;">La linea di cosmetici AraBeauty è nata dalla mia profonda connessione con la mia seconda cultura araba e dalla volontà di valorizzare la bellezza attraverso ingredienti naturali e tradizionali. Sono stata ispirata dalla ricca tradizione cosmetica araba e ho unito questo patrimonio con la mia passione per la creazione di prodotti che siano efficaci e rispettosi dell'ambiente.</p>
       <p style="color: #433d3c;font-weight:bold;font-style: italic;text-align:center">Con AraBeauty, mi impegno a promuovere l'empowerment delle donne e a celebrare la loro bellezza in tutte le sue forme.</p>
+    </section>
+    <section id="contact" class="section">
+      <h3 style="color: #A89984;">Contattaci</h3>
+      <form id="contact-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="subject">Oggetto:</label>
+        <input type="text" id="subject" name="subject" required>
+        
+        <label for="message">Messaggio:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Invia</button>
+      </form>
+      <div id="form-status"></div>
     </section>
   </main>
   <footer>

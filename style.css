@@ -1,7 +1,8 @@
- 
-    body {
-      font-family: Dancing Script, serif;
-      margin: 0;
+ h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif
+}
+body {
+  font-family: 'Open Sans', sans-serif;
     }
     .banner {
       background-image: url('https://i.pinimg.com/564x/fa/33/e5/fa33e5e054c3a5b9bbc7ae77029b59b4.jpg');
@@ -93,5 +94,94 @@
       font-weight: bold;
       font-style: italic;
     }
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form label {
+  margin: 0.5em 0 0.2em;
+  font-weight: bold;
+  color: #433d3c;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 0.7em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1em;
+  font-size: 16px;
+  color: #333;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: #A89984;
+  outline: none;
+  box-shadow: 0 0 5px rgba(168, 153, 132, 0.5);
+}
+
+#contact-form button {
+  padding: 0.7em;
+  background-color: #A89984;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#contact-form button:hover {
+  background-color: #433d3c;
+}
+
+#form-status {
+  margin-top: 1em;
+  text-align: center;
+  color: #A89984;
+}
+/*responsive*/
+@media (max-width: 768px) {
+  /* Header */
+  .banner h1 {
+    font-size: 24px;
+  }  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+ 
+  .product-list-item img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Header */
+  .banner h1 {
+    font-size: 20px;
+  }
+
+
+  .info {
+    padding: 10px;
+  }
+
+  .section {
+    padding: 10px;
+  }
+
+
+  footer {
+    padding: 10px;
+  }
  
 

@@ -3,7 +3,7 @@
 - Corso di Web Design 
 - Prof.Baccan Matteo
 - Anno Accademico 2023/2024
-- 
+  
 # AraBeauty Sito Aziendale
 
 Benvenuti in AraBeauty : il mio sito di Cosmesi Naturale d'ispirazione araba.

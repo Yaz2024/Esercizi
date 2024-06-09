@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
+  <body id="top">
     <header class="banner">
         <h1 class="title">AraBeauty</h1>
         <h2>Cosmesi Naturale</h2>
@@ -89,6 +90,15 @@
             </div>
         </section>
       <main>
+        <section class="promo-section">
+    <div class="promo-image"></div>
+    <div class="promo-text">
+        <h3>15% DI SCONTO</h3>
+        <p>Iscriviti alla newsletter AraBeauty</p>
+        <p>In omaggio il 15% di sconto sul tuo primo acquisto</p>
+        <a href="#contact" class="subscribe-button">ISCRIVITI</a>
+    </div>
+</section>
   <section class="reviews-section">
     <h3>Dicono di noi</h3>
     <div class="review-slider">
@@ -162,8 +172,9 @@
                   <p style="color: #433d3c;font-weight:bold;font-style: italic;text-align:center">"Con AraBeauty, mi impegno a promuovere l'empowerment delle donne e a celebrare la loro bellezza in tutte le sue forme"</p>
         </section>
         <section id="contact" class="section">
-            <h3 class="section-title">Contattaci</h3>
-            <form id="contact-form">
+    <h3 class="section-title">Contattaci</h3>
+    <div class="contact-form-wrapper">
+        <form id="contact-form">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -174,11 +185,16 @@
                 <input type="text" id="subject" name="subject" required>
                 
                 <label for="message">Messaggio:</label>
-                 <input type="text" id="subject" name="subject" required>
-                
+                 <input type="text" id="subject" name="subject" required></textarea>
                 <button type="submit">Invia</button>
             </form>
-            <div id="form-status"></div>
+       <div class="calligraphy-text">
+            <p>Entra a far parte della nostra famiglia AraBeauty:</p>
+            <p>basta un semplice click!</p>
+        </div>
+          </div>
+    <div id="form-status"></div>
+    <div id="form-status"></div>
         </section>
      <section class="section" id="sedi">
   <h3 style="color: #000000;">Ci trovi qui</h3>
@@ -197,6 +213,16 @@
         <a href="https://www.instagram.com/yasmine.hbi/" target="_blank"><img src="https://i.pinimg.com/originals/34/1a/1f/341a1fdb95367efaea5e54603c698062.jpg" alt="Instagram" style="width: 30px; height: 30px;"></a>
     </div>
 </footer>
+         <div class="scroll-buttons">
+        <a href="#top" class="scroll-button">
+            <img src="https://i.52112.com/icon/256/20190605/42452/1998665.png" alt="Inizio" style="width: 30px; height: 30px;">
+        </a>
+        <a href="#footer" class="scroll-button">
+            <img src="https://cdn2.iconfinder.com/data/icons/navigation-bold/500/Navigation-10-512.png" alt="Fine" style="width: 30px; height: 30px;">
+        </a>
+    </div>
+      
+      
         <script>
         document.addEventListener('DOMContentLoaded', function() {
             const prevButton = document.querySelector('.prev-btn');
@@ -211,23 +237,24 @@
                 }
             });
 
-       
+            // Per visualizzare la recensione successiva
             function showNextReview() {
                 reviews[currentReviewIndex].style.display = 'none';
                 currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
                 reviews[currentReviewIndex].style.display = 'flex';
             }
 
-            
+            // Per visualizzare la recensione precedente
             function showPrevReview() {
                 reviews[currentReviewIndex].style.display = 'none';
                 currentReviewIndex = (currentReviewIndex - 1 + reviews.length) % reviews.length;
                 reviews[currentReviewIndex].style.display = 'flex';
             }
 
-           
+            // Per il pulsante precedente
             prevButton.addEventListener('click', showPrevReview);
 
+            // Per il pulsante successivo
             nextButton.addEventListener('click', showNextReview);
         });
       </script>

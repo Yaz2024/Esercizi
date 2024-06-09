@@ -23,6 +23,10 @@ h2 {
   font-size: 30px;
   color: #433d3c;
 }
+h3 {
+  font-size: 20px;
+  color: #433d3c;
+}
 
 .info {
   background-color: #433d3c;
@@ -78,8 +82,8 @@ footer {
 }
 
 .section {
-  margin: 20px auto;
-  padding: 30px;
+  margin: 30px auto;
+  padding: 20px;
   background-color: #f5f5dc;
   width: 89%;
 }
@@ -110,6 +114,75 @@ footer {
 .product-name {
   font-weight: bold;
   font-style: italic;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.reviews-section {
+ margin: 20px auto;
+  padding: 30px;
+  background-color: #f5f5dc;
+  width: 89%;
+}
+
+.review-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.review {
+  display: none;
+}
+
+.review.active {
+  display: flex;
+  align-items: center;
+}
+
+.review-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%; 
+  margin-right: 40px;
+}
+
+.stars {
+  margin-bottom: 5px;
+}
+
+.star {
+  color: gold;
+}
+
+.review-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.slider-controls {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.prev-btn,
+.next-btn {
+  background-color: #433d3c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: #574f4d;
+}
+
+.next-btn {
+  margin-left: 10px;
 }
 
 
@@ -198,6 +271,3 @@ footer {
   footer {
     padding: 10px;
   }
-
- 
-

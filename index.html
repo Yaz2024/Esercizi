@@ -197,6 +197,40 @@
         <a href="https://www.instagram.com/yasmine.hbi/" target="_blank"><img src="https://i.pinimg.com/originals/34/1a/1f/341a1fdb95367efaea5e54603c698062.jpg" alt="Instagram" style="width: 30px; height: 30px;"></a>
     </div>
 </footer>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const prevButton = document.querySelector('.prev-btn');
+            const nextButton = document.querySelector('.next-btn');
+            const reviews = document.querySelectorAll('.review');
+            let currentReviewIndex = 0;
+
+            // Nasconde tutte le recensioni tranne la prima
+            reviews.forEach((review, index) => {
+                if (index !== currentReviewIndex) {
+                    review.style.display = 'none';
+                }
+            });
+
+            // Per visualizzare la recensione successiva
+            function showNextReview() {
+                reviews[currentReviewIndex].style.display = 'none';
+                currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
+                reviews[currentReviewIndex].style.display = 'flex';
+            }
+
+            // Per visualizzare la recensione precedente
+            function showPrevReview() {
+                reviews[currentReviewIndex].style.display = 'none';
+                currentReviewIndex = (currentReviewIndex - 1 + reviews.length) % reviews.length;
+                reviews[currentReviewIndex].style.display = 'flex';
+            }
+
+            // Per il pulsante precedente
+            prevButton.addEventListener('click', showPrevReview);
+
+            // Per il pulsante successivo
+            nextButton.addEventListener('click', showNextReview);
+        });
+      </script>
 </body>
 </html>
-

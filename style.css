@@ -10,7 +10,7 @@ body {
   background-image: url('https://i.pinimg.com/564x/fa/33/e5/fa33e5e054c3a5b9bbc7ae77029b59b4.jpg');
   background-size: cover;
   background-position: center;
-  padding: 10px;
+  padding: 30px;
   text-align: center;
 }
 
@@ -115,6 +115,61 @@ footer {
   font-weight: bold;
   font-style: italic;
 }
+/* Section for the promotion */
+.promo-section {
+    display: flex;
+    flex-direction: row;
+    height: 400px; /* Adjust height as needed */
+}
+
+.promo-image {
+    background-image: url('https://i.pinimg.com/originals/24/bb/f2/24bbf268ec29e359f9a9adb6bc0625b2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+
+.promo-text {
+    background-color: #000;
+    color: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.promo-text h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    margin: 0;
+}
+
+.promo-text p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px; 
+    margin: 10px 0;
+}
+
+.subscribe-button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px; /* Adjust size as needed */
+    color: #fff;
+    background-color: #A89984;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.subscribe-button:hover {
+    background-color: #433d3c;
+}
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -185,7 +240,6 @@ body {
   margin-left: 10px;
 }
 
-
 #contact-form {
   display: flex;
   flex-direction: column;
@@ -194,6 +248,7 @@ body {
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #contact-form label {
@@ -216,11 +271,13 @@ body {
 #contact-form textarea:focus {
   border-color: #A89984;
   outline: none;
+  box-shadow: 0 0 5px rgba(168, 153, 132, 0.5);
 }
 
 #contact-form button {
   padding: 0.7em;
   background-color: #A89984;
+  border: none;
   color: white;
   cursor: pointer;
   border-radius: 4px;
@@ -237,6 +294,64 @@ body {
   text-align: center;
   color: #A89984;
 }
+/* Importa il font 3D esterno */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet');
+
+.contact-form-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start; 
+    gap: 10px;
+}
+
+#contact-form {
+    flex: 1;
+}
+
+.calligraphy-text {
+    font-family: 'Caveat', cursive; /* Usa il font 3D esterno */
+    font-size: 24px;
+    font-style: italic;
+    color: #333;
+    max-width: 500px;
+    margin-top: 20px;
+    transform: rotate(-10deg);
+    text-align: center;
+    line-height: 1.5; /* Spaziatura tra le righe */
+
+}
+
+.scroll-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.scroll-button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.scroll-button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.scroll-button:hover {
+    background-color: #f0f0f0;
+}
+
 
 @media (max-width: 768px) {
   /* Header */
@@ -265,9 +380,10 @@ body {
   }
 
   .section {
-    padding: 10px;
+    padding: 40px;
   }
 
   footer {
     padding: 10px;
   }
+

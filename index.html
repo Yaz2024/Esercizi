@@ -211,24 +211,23 @@
                 }
             });
 
-            // Per visualizzare la recensione successiva
+       
             function showNextReview() {
                 reviews[currentReviewIndex].style.display = 'none';
                 currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
                 reviews[currentReviewIndex].style.display = 'flex';
             }
 
-            // Per visualizzare la recensione precedente
+            
             function showPrevReview() {
                 reviews[currentReviewIndex].style.display = 'none';
                 currentReviewIndex = (currentReviewIndex - 1 + reviews.length) % reviews.length;
                 reviews[currentReviewIndex].style.display = 'flex';
             }
 
-            // Per il pulsante precedente
+           
             prevButton.addEventListener('click', showPrevReview);
 
-            // Per il pulsante successivo
             nextButton.addEventListener('click', showNextReview);
         });
       </script>

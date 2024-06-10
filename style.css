@@ -358,6 +358,10 @@ body {
     font-size: 24px;
   }
 
+  .banner h2 {
+    font-size: 16px; /* Riduci la dimensione del sottotitolo per dispositivi mobili */
+  }
+
   .info {
     flex-direction: column;
     align-items: center;
@@ -374,14 +378,19 @@ body {
     font-size: 20px;
   }
 
+  .banner h2 {
+    font-size: 14px; 
+  }
+
   .info {
     padding: 10px;
   }
 
   .section {
-    padding: 40px;
-  }
+    padding: 20px; 
 
   footer {
     padding: 10px;
   }
+}
+

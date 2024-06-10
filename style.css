@@ -364,13 +364,13 @@ body {
   }
 
   .product-list-item img {
-    width: 90%; 
-    max-width: 300px; 
+    width: 80%; /* Riduci leggermente la larghezza delle immagini dei prodotti */
+    max-width: 200px; /* Limita la larghezza massima */
   }
 
-
+  /* Aggiungi spazio tra i link "Chi siamo" e "Dove siamo" e il menu dropdown */
   .info div {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
 
@@ -391,4 +391,6 @@ body {
   footer {
     padding: 10px;
   }
+
+
 

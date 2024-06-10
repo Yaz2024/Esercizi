@@ -358,17 +358,19 @@ body {
     font-size: 24px;
   }
 
-  .banner h2 {
-    font-size: 16px; /* Riduci la dimensione del sottotitolo per dispositivi mobili */
-  }
-
   .info {
     flex-direction: column;
     align-items: center;
   }
 
   .product-list-item img {
-    width: 100%;
+    width: 90%; /* Riduci leggermente la larghezza delle immagini dei prodotti */
+    max-width: 300px; /* Limita la larghezza massima */
+  }
+
+  /* Aggiungi spazio tra i link "Chi siamo" e "Dove siamo" e il menu dropdown */
+  .info div {
+    margin-bottom: 10px;
   }
 }
 
@@ -378,19 +380,15 @@ body {
     font-size: 20px;
   }
 
-  .banner h2 {
-    font-size: 14px; 
-  }
-
   .info {
     padding: 10px;
   }
 
   .section {
-    padding: 20px; 
+    padding: 40px;
+  }
 
   footer {
     padding: 10px;
   }
 }
-

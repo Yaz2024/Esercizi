@@ -352,55 +352,75 @@ body {
     background-color: #f0f0f0;
 }
 
+/* Media query per schermi fino a 768px di larghezza */
 @media (max-width: 768px) {
-  /* Header */
+  /* Regolazioni per il banner */
+  .banner {
+    padding: 20px;
+  }
+
   .banner h1 {
     font-size: 24px;
   }
 
-  .info {
-    flex-direction: column;
-    align-items: center;
+  /* Regolazioni per le sezioni */
+  .section {
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
   }
 
+  /* Regolazioni per il footer */
+  footer {
+    padding: 20px;
+  }
+
+  /* Regolazioni per il carosello di prodotti */
   .product-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 
   .product-list-item {
-    width: 33%;
-    padding: 0 5px;
-    box-sizing: border-box;
+    width: 45%;
+    margin-bottom: 20px;
   }
 
   .product-list-item img {
     width: 100%;
     height: auto;
   }
-
-  /* Aggiungi spazio tra i link "Chi siamo" e "Dove siamo" e il menu dropdown */
-  .info div {
-    margin-bottom: 10px;
-  }
 }
 
+/* Media query per schermi fino a 480px di larghezza */
 @media (max-width: 480px) {
-  /* Header */
+  /* Regolazioni per il banner */
+  .banner {
+    padding: 10px;
+  }
+
   .banner h1 {
     font-size: 20px;
   }
 
-  .info {
+  /* Regolazioni per le sezioni */
+  .section {
+    padding: 30px;
+  }
+
+  /* Regolazioni per il footer */
+  footer {
     padding: 10px;
   }
 
-  .section {
-    padding: 40px;
+  /* Regolazioni per il carosello di prodotti */
+  .product-list-item {
+    width: 100%;
   }
+}
 
   footer {
     padding: 10px;
   }
-}
+

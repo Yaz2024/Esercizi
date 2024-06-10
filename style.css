@@ -87,13 +87,13 @@ footer {
   background-color: #f5f5dc;
   width: 92%;
 }
-
 .section img {
   display: block;
   margin: 0 auto;
   width: 200px;
-}
 
+
+}
 .product-container {
   text-align: center;
   overflow-x: auto;
@@ -115,11 +115,11 @@ footer {
   font-weight: bold;
   font-style: italic;
 }
-/* Section for the promotion */
+
 .promo-section {
     display: flex;
     flex-direction: row;
-    height: 400px; /* Adjust height as needed */
+    height: 400px; 
 }
 
 .promo-image {
@@ -158,7 +158,7 @@ footer {
 .subscribe-button {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 24px; /* Adjust size as needed */
+    font-size: 24px; 
     color: #fff;
     background-color: #A89984;
     padding: 10px 20px;
@@ -310,15 +310,15 @@ body {
 }
 
 .calligraphy-text {
-    font-family: 'Caveat', cursive; /* Usa il font 3D esterno */
+    font-family: 'Caveat', cursive; 
     font-size: 24px;
     font-style: italic;
     color: #333;
     max-width: 500px;
-    margin-top: 20px;
-    transform: rotate(-10deg);
+    margin-top: 100px;
+    transform: rotate(-5deg);
     text-align: center;
-    line-height: 1.5; /* Spaziatura tra le righe */
+    line-height: 1.5; 
 
 }
 
@@ -351,7 +351,6 @@ body {
 .scroll-button:hover {
     background-color: #f0f0f0;
 }
-
 
 @media (max-width: 768px) {
   /* Header */
@@ -386,4 +385,3 @@ body {
   footer {
     padding: 10px;
   }
-

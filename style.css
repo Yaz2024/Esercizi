@@ -363,14 +363,26 @@ body {
     align-items: center;
   }
 
+  .product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .product-list-item {
+    width: 33%;
+    padding: 0 5px;
+    box-sizing: border-box;
+  }
+
   .product-list-item img {
-    width: 80%; /* Riduci leggermente la larghezza delle immagini dei prodotti */
-    max-width: 200px; /* Limita la larghezza massima */
+    width: 100%;
+    height: auto;
   }
 
   /* Aggiungi spazio tra i link "Chi siamo" e "Dove siamo" e il menu dropdown */
   .info div {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -391,6 +403,4 @@ body {
   footer {
     padding: 10px;
   }
-
-
-
+}

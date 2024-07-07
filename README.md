@@ -12,7 +12,7 @@ Benvenuti in AraBeauty : il mio sito di Cosmesi Naturale d'ispirazione araba.
 
 AraBeauty è un brand che abbraccia valori autentici e lavora giornalmente per offrire ai suoi clienti i prodotti migliori,rispettando l'ambiente e le comunità coinvolte.
 
-## Accesso al Sito
+# Accesso al Sito
 
 Puoi visitare il mio sito AraBeauty su questo link: https://velvety-halva-c5080f.netlify.app/
 

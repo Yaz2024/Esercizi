@@ -47,9 +47,9 @@
 }
 
 .side-menu a {
-    padding: 10px 15px;
+    padding: 13px 15px;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: #f8f4f0;
     display: block;
     transition: 0.3s;
@@ -71,7 +71,7 @@
 .nav-links {
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding: 19px 0;
 }
 
 .nav-links ul {
@@ -79,20 +79,19 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 20px;
+    gap: 30px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #4a2c2a;
-    font-size: 1em;
+    font-size: 1.3em;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
     color: #e4c29f;
 }
-
 .banner {
     background-image: url('https://i.pinimg.com/564x/fa/33/e5/fa33e5e054c3a5b9bbc7ae77029b59b4.jpg');
     background-size: cover;
@@ -125,6 +124,35 @@
     font-family: 'Great Vibes', cursive;
     font-size: 3em;
     margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .banner {
+        height: 60vh; /* Riduci l'altezza per schermi più piccoli */
+    }
+
+    .banner h1 {
+        font-size: 5em; /* Riduci la dimensione del testo per schermi più piccoli */
+    }
+
+    .banner p {
+        font-size: 1.5em; /* Riduci la dimensione del testo per schermi più piccoli */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 50vh; /* Riduci ulteriormente l'altezza per schermi molto piccoli */
+    }
+
+    .banner h1 {
+        font-size: 3em; /* Riduci ulteriormente la dimensione del testo */
+    }
+
+    .banner p {
+        font-size: 1em; /* Riduci ulteriormente la dimensione del testo */
+    }
 }
 
 /* Stili responsivi */
@@ -206,7 +234,7 @@
 .about-us p {
     font-size: 1.2em;
     color: #4a2c2a;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .about-us .image {
@@ -265,7 +293,7 @@
 .community p {
     font-size: 1.2em;
     color: #4a2c2a;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .community .image {
@@ -326,7 +354,7 @@
 .mission p {
     font-size: 1.2em;
     color: #4a2c2a;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .mission .image {
@@ -510,10 +538,13 @@
 }
 }
 .spedizioni {
-    padding: 50px;
+    padding: 40px;
     background-color: #e4c29f;
     text-align: center;
     color: #4a2c2a;
+   align-items: center; 
+    justify-content: center; 
+    height: 80vh; 
 }
 
 .shipping-info {
@@ -529,7 +560,7 @@
 
 .shipping-info p {
     font-size: 1.2em;
-    line-height: 1.6;
+    line-height: 1.5;
     margin-bottom: 10px;
 }
 
@@ -567,12 +598,15 @@ body {
 .newsletter-section {
     background-color: #4a2c2a;
     color:  #fff;
-    padding: 50px 0;
+    padding: 30px 0;
     text-align: center;
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh; 
 }
 
 .container {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -651,7 +685,7 @@ button:hover {
 
 #about-founder .about-founder-content p {
   font-size: 1.1rem;
-    line-height: 1.6;
+    line-height: 1.5;
     margin-bottom: 15px;
 }
  body {

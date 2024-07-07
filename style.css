@@ -4,26 +4,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-#newsletter-form input[type="email"] {
-    padding: 10px;
-    width: 80%;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-#newsletter-form button {
-    padding: 10px 20px;
-    background-color: #e4c29f;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-}
-#newsletter-form button:hover {
-    background-color: #c29a7f;
-}
 .header {
     display: flex;
     justify-content: space-between;

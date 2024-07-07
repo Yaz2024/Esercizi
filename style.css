@@ -1,9 +1,29 @@
-.body {
+body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
+#newsletter-form input[type="email"] {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+#newsletter-form button {
+    padding: 10px 20px;
+    background-color: #e4c29f;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#newsletter-form button:hover {
+    background-color: #c29a7f;
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -47,9 +67,9 @@
 }
 
 .side-menu a {
-    padding: 13px 15px;
+    padding: 10px 15px;
     text-decoration: none;
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: #f8f4f0;
     display: block;
     transition: 0.3s;
@@ -71,7 +91,7 @@
 .nav-links {
     display: flex;
     justify-content: center;
-    padding: 19px 0;
+    padding: 10px 0;
 }
 
 .nav-links ul {
@@ -79,13 +99,13 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 30px;
+    gap: 20px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #4a2c2a;
-    font-size: 1.3em;
+    font-size: 1em;
     transition: color 0.3s;
 }
 
@@ -129,35 +149,35 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
     .banner {
-        height: 60vh; /* Riduci l'altezza per schermi più piccoli */
+        height: 60vh; 
     }
 
     .banner h1 {
-        font-size: 5em; /* Riduci la dimensione del testo per schermi più piccoli */
+        font-size: 5em; 
     }
 
     .banner p {
-        font-size: 1.5em; /* Riduci la dimensione del testo per schermi più piccoli */
+        font-size: 1.5em; 
     }
 }
 
 @media (max-width: 480px) {
     .banner {
-        height: 50vh; /* Riduci ulteriormente l'altezza per schermi molto piccoli */
+        height: 50vh; 
     }
 
     .banner h1 {
-        font-size: 3em; /* Riduci ulteriormente la dimensione del testo */
+        font-size: 3em; 
     }
 
     .banner p {
-        font-size: 1em; /* Riduci ulteriormente la dimensione del testo */
+        font-size: 1em; 
     }
 }
 
 /* Stili responsivi */
 @media (max-width: 768px) {
-    /* Menu burger per dispositivi mobili */
+    
     .burger-menu {
         display: flex;
         align-items: center;
@@ -234,7 +254,7 @@
 .about-us p {
     font-size: 1.2em;
     color: #4a2c2a;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .about-us .image {
@@ -293,7 +313,7 @@
 .community p {
     font-size: 1.2em;
     color: #4a2c2a;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .community .image {
@@ -354,7 +374,7 @@
 .mission p {
     font-size: 1.2em;
     color: #4a2c2a;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 .mission .image {
@@ -509,8 +529,8 @@
 }
 
 .promo-image {
-    padding: 0;
-    flex: 2;
+    padding:0;
+      flex: 2;
     max-width: 100%;
     height: 100%;
     position: relative;
@@ -519,32 +539,19 @@
 .promo-image img {
     background-color: #4a2c2a;
     text-align: center;
+    height: auto;
     color: #fff;
-    width: 100%;
-    height: auto; 
+  width: 100%;
+    height: 20%;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-@media (max-width: 768px) {
-    .promo-image {
-        flex: 1; 
-    }
-
-    .promo-image img {
-        width: 100%;
-        height: auto; 
-}
-}
 .spedizioni {
-    padding: 40px;
+    padding: 50px;
     background-color: #e4c29f;
     text-align: center;
     color: #4a2c2a;
-   align-items: center; 
-    justify-content: center; 
-    height: 80vh; 
 }
 
 .shipping-info {
@@ -560,7 +567,7 @@
 
 .shipping-info p {
     font-size: 1.2em;
-    line-height: 1.5;
+    line-height: 1.6;
     margin-bottom: 10px;
 }
 
@@ -584,7 +591,7 @@
 .shipping-info a:hover {
     color: #f8f4f0;
 }
- {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -598,15 +605,12 @@ body {
 .newsletter-section {
     background-color: #4a2c2a;
     color:  #fff;
-    padding: 30px 0;
+    padding: 50px 0;
     text-align: center;
-    align-items: center; 
-    justify-content: center; 
-    height: 100vh; 
 }
 
 .container {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -685,7 +689,7 @@ button:hover {
 
 #about-founder .about-founder-content p {
   font-size: 1.1rem;
-    line-height: 1.5;
+    line-height: 1.6;
     margin-bottom: 15px;
 }
  body {

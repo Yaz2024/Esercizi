@@ -8,7 +8,7 @@
 
 Benvenuti in AraBeauty : il mio sito di Cosmesi Naturale d'ispirazione araba.
 
-## Descrizione
+# Descrizione
 
 AraBeauty è un brand che abbraccia valori autentici e lavora giornalmente per offrire ai suoi clienti i prodotti migliori,rispettando l'ambiente e le comunità coinvolte.
 
@@ -17,12 +17,12 @@ AraBeauty è un brand che abbraccia valori autentici e lavora giornalmente per o
 Puoi visitare il mio sito AraBeauty su questo link: https://velvety-halva-c5080f.netlify.app/
 
 
-## About the Site
+# About the Site
 
 Il sito AraBeauty è stato concepito per risultare semplice, pulito ed intuitivo.Teniamo principalmente all'aquisto consapevole percio' è presente una caption descrittiva della mission e un breve pesnsiero della fondatrice stessa. Ci teniamo a non confondere il nostro cliente, bensì a rendergli la navigazione semplice e completa.
 
 
-# Elementi strutturali:
+# Elementi strutturali
 Il sito web di AraBeauty è organizzato in diverse sezioni che offrono un'esperienza utente completa, con vari elementi e funzionalità. 
 
 * Header con collegamento a menu' laterale.
@@ -40,19 +40,19 @@ Il sito web di AraBeauty è organizzato in diverse sezioni che offrono un'esperi
 * Footer che include link di navigazione e crediti.
 
 
-# Strumenti:
+# Strumenti
 * Chat Gpt
 * Github
 * Codepen
 
-## Contacts
+# Contatti
 Per qualsiasi informazione,domanda,consiglio mettersi in contatto con i seguenti recapiti.
 
 - Email: (info@arabeauty.com)
 - Sito: 	https://velvety-halva-c5080f.netlify.app/
 - Tel: +39 329 976 4612
 
-## License
+# License
 
 Il contenuto di questo portfolio è soggetto alla [Nome della Licenza]. Consulta il file LICENSE per ulteriori dettagli.
 

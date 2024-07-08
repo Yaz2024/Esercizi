@@ -508,9 +508,10 @@
 }
 
  {
-    box-sizing: border-box;
+   box-sizing: border-box;
     margin: 0;
     padding: 0;
+  
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -519,11 +520,11 @@ body {
 .newsletter-section {
     background-color: #e4c29f;
     color:  #fff;
-    padding: 50px 0;
+    padding: 30px 0;
     text-align: center;
 }
 .container {
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
 }
 h2 {
@@ -743,11 +744,11 @@ h4 {
  footer {
   background-color: #4a2c2a;
   color: #fff;
-  padding: 35px;
+  padding: 25px;
   text-align: center;
 }
 footer p {
-  margin: 0;
+  margin: 10;
 }
 
 #popup {
@@ -842,5 +843,6 @@ footer p {
         font-size: 0.9em;
         padding: 8px;
     }
+
 
 

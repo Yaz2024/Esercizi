@@ -762,9 +762,12 @@ h4 {
 footer p {
   margin: 10;
 }
+body {
+    font-family: Arial, sans-serif;
+}
 
 #popup {
-    display: none; 
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -780,7 +783,8 @@ footer p {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 300px;
+    width: 80%;
+    max-width: 400px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative; 
@@ -788,15 +792,80 @@ footer p {
 
 .close-popup {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 5px;
+    right: 15px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 30px;
+}
+
+.popup-content h2, .popup-content p, .popup-content a {
+    color: #6d4b3f; 
 }
 
 .popup-content h2 {
     margin-top: 0;
-  color: #6d4b3f;
+    font-size: 2.5em;
+   line-height: 1.3;
+}
+
+.popup-content p {
+    font-size: 1.3em;
+   line-height: 1.3;
+}
+
+#subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#subscribe-form input[type="email"] {
+    padding: 10px;
+    margin-bottom: 22px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 85%;
+    font-size: 1.2em;
+}
+
+#subscribe-form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #6d4b3f;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1.3em;
+}
+
+#subscribe-form button:hover {
+    background-color:   #A89984
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .popup-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .popup-content h2 {
+        font-size: 1.2em;
+    }
+
+    .popup-content p {
+        font-size: 0.9em;
+    }
+
+    #subscribe-form input[type="email"] {
+        font-size: 0.9em;
+    }
+
+    #subscribe-form button {
+        font-size: 0.9em;
+        padding: 8px;
+    }
 }
 
 

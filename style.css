@@ -54,7 +54,7 @@
         }
 
         .side-menu a:hover {
-            background-color: #f4e3d0;;
+            background-color: #e4c29f;
         }
 
         .side-menu .close-btn {
@@ -92,7 +92,7 @@
 }
 
 .nav-links a:hover {
-    color:  #e4c29f;
+    color: #e4c29f;
 }
   
 .banner {
@@ -110,7 +110,7 @@
     text-align: center;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    background: #4a2c2a
+    background: rgba(0, 0, 0, 0);
     padding: 20px;
     border-radius: 10px;
 }
@@ -124,7 +124,6 @@
     font-family: 'Great Vibes', cursive;
     font-size: 3em;
     margin: 0;
-    color: #f4e3d0;
 }
 
 @media (max-width: 768px) {
@@ -154,30 +153,14 @@
         background-color: #f8f4f0;
         width: 100%;
         text-align: center;
-        padding: 10px 0;
     }
     .nav-links.active {
         display: flex;
     }
     .nav-links ul {
         flex-direction: column;
-        gap: 20px; 
+        gap: 10px;
     }
-  .nav-links li {
-    margin-bottom: 10px; 
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #4a2c2a;
-    font-size: 1em;
-    padding: 15px 20px; 
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #e4c29f;
-}
     .banner h1 {
         font-size: 2em;
     }
@@ -465,7 +448,7 @@
     background-color: #4a2c2a;
     text-align: center;
     color: #fff;
-    width: 80%;
+    width: 100%;
     height: auto; 
     object-fit: cover;
     border-radius: 10px;

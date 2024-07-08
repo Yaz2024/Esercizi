@@ -608,50 +608,63 @@ h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 2.2em;
     margin-bottom: 20px;
-    color: #4a2c2a
-}
+ color: #4a2c2a
+   }
 .reviews-section {
     position: relative;
     width: 60%;
     margin: 0 auto;
     overflow: hidden;
     padding: 20px 0;
-   
 }
+
 .reviews-slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
+
 .review {
+    position: relative;
     min-width: 100%;
     box-sizing: border-box;
-    padding: 50px;
+    padding: 20px; 
     text-align: center;
 }
+
 .review-image {
     border-radius: 50%;
     width: 100px;
     height: 100px;
     object-fit: cover;
     margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
 }
+
+.review-image:hover {
+    transform: scale(1.5); 
+}
+
 .review-content {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .stars {
     margin-top: 10px;
 }
+
 .star {
     font-size: 1.5rem;
     color: #e4c29f;
 }
-.prev, .next {
+
+.prev,
+.next {
     position: absolute;
     top: 50%;
-    transform: translateY(80%);
+    transform: translateY(-50%); 
     background-color: #e4c29f;
     color: white;
     border: none;
@@ -666,12 +679,15 @@ h4 {
     align-items: center;
     justify-content: center;
 }
+
 .prev {
-    left: 0px;
+    left: 10px; 
 }
+
 .next {
-    right: 0px;
+    right: 10px; 
 }
+
 .section-title {
     text-align: center;
     font-size: 3rem;
@@ -804,8 +820,6 @@ footer p {
     background-color:  #bfa780;
 }
 
-
-/* Responsive Design */
 @media (max-width: 600px) {
     .popup-content {
         width: 90%;

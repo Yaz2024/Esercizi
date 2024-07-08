@@ -66,31 +66,34 @@
             cursor: pointer;
         }
 
-        /* Stili per i link di navigazione */
         .nav-links {
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
 
-        .nav-links ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            gap: 20px;
-        }
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px; 
+}
 
-        .nav-links a {
-            text-decoration: none;
-            color: #4a2c2a;
-            font-size: 1em;
-            transition: color 0.3s;
-        }
+.nav-links li {
+    margin-bottom: 5px; 
+}
+.nav-links a {
+    text-decoration: none;
+    color: #4a2c2a;
+    font-size: 1em;
+    padding: 10px; 
+    transition: color 0.3s;
+}
 
-        .nav-links a:hover {
-            color: #e4c29f;
-        }
+.nav-links a:hover {
+    color: #e4c29f;
+}
   
 .banner {
     background-image: url('https://i.pinimg.com/564x/fa/33/e5/fa33e5e054c3a5b9bbc7ae77029b59b4.jpg');
@@ -576,7 +579,10 @@ button:hover {
    font-family: 'Great Vibes', cursive;
     font-size: 2em;
     margin-bottom: 35px;
-  color: #4a2c2a
+   color: #4a2c2a
+}
+h3 { font-family: 'Great Vibes', cursive;
+  font-size: 2.5em;
 }
 #about-founder .about-founder-content {
     margin-bottom: 30px;
@@ -591,6 +597,12 @@ button:hover {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #4a2c2a
 }
 .reviews-section {
     position: relative;

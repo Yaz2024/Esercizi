@@ -112,6 +112,7 @@ body {
 .nav-links a:hover {
     color: #e4c29f;
 }
+
 .banner {
     background-image: url('https://i.pinimg.com/564x/fa/33/e5/fa33e5e054c3a5b9bbc7ae77029b59b4.jpg');
     background-size: cover;
@@ -146,38 +147,9 @@ body {
     margin: 0;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .banner {
-        height: 60vh; 
-    }
-
-    .banner h1 {
-        font-size: 5em; 
-    }
-
-    .banner p {
-        font-size: 1.5em; 
-    }
-}
-
-@media (max-width: 480px) {
-    .banner {
-        height: 50vh; 
-    }
-
-    .banner h1 {
-        font-size: 3em; 
-    }
-
-    .banner p {
-        font-size: 1em; 
-    }
-}
-
 /* Stili responsivi */
 @media (max-width: 768px) {
-    
+    /* Menu burger per dispositivi mobili */
     .burger-menu {
         display: flex;
         align-items: center;
@@ -512,6 +484,8 @@ body {
 .promo-text {
     flex: 1;
     text-align: left;
+   padding: 50px 0;
+
 }
 
 .promo-text h2 {
@@ -552,6 +526,7 @@ body {
     background-color: #e4c29f;
     text-align: center;
     color: #4a2c2a;
+   padding: 50px 0;
 }
 
 .shipping-info {
@@ -610,14 +585,14 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
 h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 2.7em;
+    margin-bottom: 13px;
 }
 
 h4 { font-family: 'Great Vibes', cursive;
@@ -626,8 +601,9 @@ h4 { font-family: 'Great Vibes', cursive;
   .newsletter-form {
     background-color: #fff;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 9px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     padding: 30px 10;
 }
 
 .form-group {

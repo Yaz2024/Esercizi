@@ -276,8 +276,18 @@
             <img src="https://cdn2.iconfinder.com/data/icons/navigation-bold/500/Navigation-10-512.png" alt="Fine" style="width: 30px; height: 30px;">
         </a>
     </div>
-
-
+<div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="close-popup" class="close-popup">&times;</span>
+            <h2>È il tuo giorno fortunato!</h2>
+            <p>AraBeauty ti riserva un regalo speciale sul tuo prossimo acquisto.</p>
+               <p>Iscriviti ora!</p>
+            <form id="subscribe-form">
+                <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
+                <button type="submit">Iscriviti</button>
+            </form>
+        </div>
+    </div>
 
    
   
@@ -316,7 +326,25 @@ function nextReview() {
 document.addEventListener('DOMContentLoaded', () => {
     showReview(currentReview);
 });
+      document.addEventListener('DOMContentLoaded', function() {
+    // Show the popup when the page loads
+    document.getElementById('popup').style.display = 'flex';
+
+    // Close the popup when the close button is clicked
+    document.getElementById('close-popup').addEventListener('click', function() {
+        document.getElementById('popup').style.display = 'none';
+    });
+
+    // Close the popup when clicking outside of the popup content
+    window.addEventListener('click', function(event) {
+        if (event.target == document.getElementById('popup')) {
+            document.getElementById('popup').style.display = 'none';
+        }
+    });
+});
+
 
     </script>
 </body>
 </html>
+

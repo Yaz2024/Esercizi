@@ -199,8 +199,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 1000%;
-    width: 700%; 
+    height: 800%;
+    width: 600%; 
 }
  .about-us .image img {
     width: 100%;
@@ -251,8 +251,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 1000%;
-    width: 700%; 
+    height: 800%;
+    width: 600%; 
 }
 .community .image img {
     width: 100%;
@@ -303,8 +303,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 1000%;
-    width: 700%; 
+    height: 800%;
+    width: 600%; 
 }
 .mission .image img {
     width: 100%;

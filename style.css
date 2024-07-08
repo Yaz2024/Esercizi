@@ -199,8 +199,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 800%;
-    width: 600%; 
+    height: 100%;
+    width: 100%; 
 }
  .about-us .image img {
     width: 100%;
@@ -251,8 +251,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 800%;
-    width: 600%; 
+    height: 100%;
+    width: 100%; 
 }
 .community .image img {
     width: 100%;
@@ -303,8 +303,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 800%;
-    width: 600%; 
+    height: 100%;
+    width: 100%; 
 }
 .mission .image img {
     width: 100%;
@@ -345,6 +345,12 @@
     color: #4a2c2a;
     margin-bottom: 10px;
     text-align: center;
+}
+.products h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.9 em;
+    margin-bottom: 10px;
+    color: #4a2c2a
 }
 .products .carousel {
     width: 100%;

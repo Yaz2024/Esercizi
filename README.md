@@ -37,13 +37,17 @@ Il sito web di AraBeauty è organizzato in diverse sezioni che offrono un'esperi
 * Sezione Spedizioni che fornisce informazioni sulle opzioni di spedizione disponibili.
 * Sezione Newsletter che invita i visitatori a iscriversi.
 * Sezione About the Founder che descrive il fondatore dell'azienda.
-* Footer che include link di navigazione e crediti.
+* Footer che include link di navigazione, contatti e crediti.
+* Pop-up offerta
+  
 
 
 # Strumenti
 * Chat Gpt
 * Github
 * Codepen
+* Youtube
+  
 
 # Contatti
 Per qualsiasi informazione,domanda,consiglio mettersi in contatto con i seguenti recapiti.
@@ -54,7 +58,7 @@ Per qualsiasi informazione,domanda,consiglio mettersi in contatto con i seguenti
 
 # License
 
-Il contenuto di questo portfolio è soggetto alla [Nome della Licenza]. Consulta il file LICENSE per ulteriori dettagli.
+Il contenuto di questo portfolio è soggetto alla AraBeauty License. Consulta il file LICENSE per ulteriori dettagli.
 
 Grazie per esserti interessato ad AraBeauty! 
 

@@ -27,13 +27,10 @@
             transition: transform 0.3s, background-color 0.3s;
         }
 
-        /* Stili per l'header content */
         .header-content {
             text-align: center;
             color: #4a2c2a;
         }
-
-        /* Stili per il side menu */
         .side-menu {
             height: 100%;
             width: 0;
@@ -125,9 +122,9 @@
     font-size: 3em;
     margin: 0;
 }
-/* Stili responsivi */
+
 @media (max-width: 768px) {
-    /* Menu burger per dispositivi mobili */
+    
     .burger-menu {
         display: flex;
         align-items: center;
@@ -143,7 +140,7 @@
     .header-content {
         display: none;
     }
-    /* Menu di navigazione per dispositivi mobili */
+    
     .nav-links {
         display: none;
         flex-direction: column;

@@ -13,7 +13,6 @@
 </head>
 <body>
     <header class="header">
-    </div>
         <div class="burger-menu" id="burger-menu">
             <span></span>
             <span></span>
@@ -38,14 +37,17 @@
         </div>
     </section>
     <section class="nav-links" id="nav-links">
-        <ul>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#mission">Mission</a></li>
-            <li><a href="#sede">Sede</a></li>
-            <li><a href="#spedizioni">Spedizioni</a></li>
-        </ul>
-    </section>
+      <div class="section-header">
+  <ul>
+    <li><a href="#about-us">About Us</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#mission">Mission</a></li>
+    <li><a href="#sede">Sede</a></li>
+    <li><a href="#spedizioni">Spedizioni</a></li>
+  </ul>
+        </div>
+</section>
+
     <section class="about-us" id="about-us">
         <div class="content">
             <h2>About Us</h2>
@@ -245,35 +247,30 @@
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.2508650701595!2d9.204215615785875!3d45.45331284364352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6ba4053e1bb%3A0x6a3c16b3b29b7a6c!2sVia%20Giovanni%20Bellezza%2C%20123%2C%2020129%20Milano%20MI%2C%20Italy!5e0!3m2!1sen!2sus!4v1689721189393!5m2!1sen!2sus"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-    </section>
+              </iframe>
+       </div>
   </section>
- <section class="section" id="footer">
-    </main>
- <footer>
-    <p> Via Giovanni Bellezza 123, Milano 20136 MI</p>
-    <p> info@arabeauty.com - Tel: +39 329 976 4612</p>
-    <p>&copy; 2024 AraBeauty</p>
-    <div>
+  <section class="section" id="footer">
+    <footer>
+      <p> Via Giovanni Bellezza 123, Milano 20136 MI</p>
+      <p> info@arabeauty.com - Tel: +39 329 976 4612</p>
+      <p>&copy; 2024 AraBeauty</p>
+      <div>
         <a href="https://wa.me/393287895652" target="_blank"><img src="https://i.pinimg.com/originals/89/a9/18/89a918034ce45495c9959fadaa8da211.jpg" alt="WhatsApp" style="width: 30px; height: 30px; margin-right: 10px;"></a>
         <a href="https://www.instagram.com/yasmine.hbi/" target="_blank"><img src="https://i.pinimg.com/originals/34/1a/1f/341a1fdb95367efaea5e54603c698062.jpg" alt="Instagram" style="width: 30px; height: 30px;"></a>
-    </div>
-</footer>
-         <div class="scroll-buttons">
-        <a href="#top" class="scroll-button">
-            <img src="https://i.52112.com/icon/256/20190605/42452/1998665.png" alt="Inizio" style="width: 30px; height: 30px;">
-        </a>
-        <a href="#footer" class="scroll-button">
-            <img src="https://cdn2.iconfinder.com/data/icons/navigation-bold/500/Navigation-10-512.png" alt="Fine" style="width: 30px; height: 30px;">
-        </a>
-    </div>
+      </div>
+    </footer>
+  </section>
+  <div class="scroll-buttons">
+    <a href="#top" class="scroll-button">
+      <img src="https://i.52112.com/icon/256/20190605/42452/1998665.png" alt="Inizio" style="width: 30px; height: 30px;">
+    </a>
+    <a href="#footer" class="scroll-button">
+      <img src="https://cdn2.iconfinder.com/data/icons/navigation-bold/500/Navigation-10-512.png" alt="Fine" style="width: 30px; height: 30px;">
+    </a>
+  </div>
 
-
-
-   
   
-
     <script>
         document.getElementById('burger-menu').addEventListener('click', function() {
             document.getElementById('side-menu').classList.add('active');
@@ -294,7 +291,7 @@ function showReview(index) {
     } else {
         currentReview = index;
     }
-    slider.style.transform = `translateX(-${currentReview * 100}%)`;
+    slider.style.transform = translateX(-${currentReview * 100}%);
 }
 
 function prevReview() {
@@ -312,7 +309,3 @@ document.addEventListener('DOMContentLoaded', () => {
     </script>
 </body>
 </html>
-
-
-
-

@@ -126,6 +126,29 @@
     font-family: 'Great Vibes', cursive;
     font-size: 3em;
     margin: 0;
+    
+} 
+@media (max-width: 768px) {
+    .banner {
+        height: 60vh; 
+    }
+    .banner h1 {
+        font-size: 5em; 
+    }
+    .banner p {
+        font-size: 2em; 
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 50vh; 
+    }
+    .banner h1 {
+        font-size: 3em;
+    }
+    .banner p {
+        font-size: 1.5em;
+    }
 }
 
 @media (max-width: 768px) {
@@ -162,12 +185,6 @@
     .nav-links ul {
         flex-direction: column;
         gap: 10px;
-    }
-    .banner h1 {
-        font-size: 2em;
-    }
-    .banner p {
-        font-size: 1.5em;
     }
 }
 .side-menu.active {

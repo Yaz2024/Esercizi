@@ -1094,6 +1094,9 @@ footer p {
     #subscribe-form button {
         font-size: 1.1em;
     }
+    .scroll-buttons {
+        bottom: 10px;
+        right: 10px;
    }
 
 /*RESPONSIVE POPUP*/
@@ -1119,6 +1122,10 @@ footer p {
     }
     #subscribe-form button {
         font-size: 1em;
+    }
+    .scroll-button {
+        width: 25px;
+        height: 25px;
     }
 }
 

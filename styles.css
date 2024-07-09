@@ -1,3 +1,4 @@
+/* CSS HEADER*/
 .body {
     margin: 0;
     padding: 0;
@@ -26,7 +27,6 @@
             margin: 4px;
             transition: transform 0.3s, background-color 0.3s;
         }
-
         .header-content {
             text-align: center;
             color: #4a2c2a;
@@ -43,7 +43,6 @@
             transition: 0.5s;
             padding-top: 60px;
         }
-
         .side-menu a {
             padding: 15px 25px;
             text-decoration: none;
@@ -54,11 +53,9 @@
           text-transform: uppercase;
     font-weight: bold; 
         }
-
         .side-menu a:hover {
             background-color: #6d4b3f;
         }
-
         .side-menu .close-btn {
             position: absolute;
             top: 15px;
@@ -67,13 +64,14 @@
             color: #f0e6d2;
             cursor: pointer;
         }
-
-    .nav-links {
+.side-menu.active {
+    width: 250px;
+}
+   .nav-links {
     display: flex;
     justify-content: center;
     padding: 26px 0;
 }
-
 .nav-links ul {
     display: flex;
     list-style: none;
@@ -81,7 +79,6 @@
     margin: 0;
     gap: 25px; 
 }
-
 .nav-links li {
     margin-bottom: 5px; 
 }
@@ -92,11 +89,10 @@
     padding: 15px; 
     transition: color 0.3s;
 }
-
 .nav-links a:hover {
     color: #e4c29f;
 }
-  
+  /* CSS BANNER */
 .banner {
     background-image: url('https://i.pinimg.com/564x/fa/33/e5/fa33e5e054c3a5b9bbc7ae77029b59b4.jpg');
     background-size: cover;
@@ -127,9 +123,8 @@
     font-size: 3em;
     margin: 0;
 }
-
+/* RESPONSIVE BURGER-SIDE MENU E LINKS*/
 @media (max-width: 768px) {
-    
     .burger-menu {
         display: flex;
         align-items: center;
@@ -145,7 +140,6 @@
     .header-content {
         display: none;
     }
-    
     .nav-links {
         display: none;
         flex-direction: column;
@@ -170,9 +164,7 @@
         font-size: 1.5em;
     }
 }
-.side-menu.active {
-    width: 250px;
-}
+/* CSS ABOUT US */
 .about-us {
     display: flex;
     align-items: center;
@@ -210,6 +202,7 @@
     object-fit: cover;
     border-radius: 10px;
 }
+/* RESPONSIVE ABOUT US */
 @media (max-width: 768px) {
     .about-us {
         flex-direction: column;
@@ -226,6 +219,7 @@
         height: auto;
     }
 }
+/* CSS COMMUNITY*/
 .community {
     display: flex;
     align-items: center;
@@ -262,6 +256,7 @@
     object-fit: cover;
     border-radius: 10px;
 }
+/* RESPONSIVE COMMUNITY*/
 @media (max-width: 768px) {
     .community {
         flex-direction: column;
@@ -278,6 +273,7 @@
         height: auto;
     }
 }
+/* CSS MISSION*/
 .mission {
     display: flex;
     align-items: center;
@@ -314,6 +310,7 @@
     object-fit: cover;
     border-radius: 10px;
 }
+/*RESPONSIVE MISSION*/
 @media (max-width: 768px) {
     .mission {
         flex-direction: column;
@@ -330,6 +327,7 @@
         height: auto;
     }
 }
+/*CSS PRODOTTI*/
 .products {
     display: flex;
     flex-direction: column;
@@ -398,16 +396,73 @@
 .products .carousel-item button:hover {
     background-color: #8a6b5f;
 }
+/*RESPONSIVE PRODOTTI*/
 @media (max-width: 768px) {
+    .products {
+        padding: 20px;
+    }
+    .products h2 {
+        font-size: 2.5em;
+    }
+    .products h3 {
+        font-size: 2.3em;
+    }
     .products .carousel {
-        flex-direction: column;
-        align-items: center;
+        gap: 10px;
     }
     .products .carousel-item {
-        width: 100%;
-        margin-bottom: 20px;
+        width: 250px;
+        padding: 20px;
+    }
+    .products .carousel-item img {
+        width: 250px;
+        height: 300px;
+    }
+    .products .carousel-item h3 {
+        font-size: 1.2em;
+    }
+    .products .carousel-item p {
+        font-size: 0.9em;
+    }
+    .products .carousel-item button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
 }
-  }
+/*RESPONSIVE PRODOTTI*/
+@media (max-width: 480px) {
+    .products {
+        padding: 10px;
+    }
+    .products h2 {
+        font-size: 2em;
+    }
+    .products h3 {
+        font-size: 1.8em;
+    }
+    .products .carousel {
+        gap: 5px;
+    }
+    .products .carousel-item {
+        width: 200px;
+        padding: 15px;
+    }
+    .products .carousel-item img {
+        width: 200px;
+        height: 250px;
+    }
+    .products .carousel-item h3 {
+        font-size: 1em;
+    }
+    .products .carousel-item p {
+        font-size: 0.8em;
+    }
+    .products .carousel-item button {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+}
+/*CSS PROMO*/
 .promo {
     padding: 40px;
     background-color: #4a2c2a;
@@ -437,7 +492,6 @@
     line-height: 1.2;
     margin-bottom: 30px;
  }
-
 .promo-image {
     padding: 0;
     flex: 2;
@@ -445,7 +499,6 @@
     height: 100%;
     position: relative;
 }
-
 .promo-image img {
     background-color: #4a2c2a;
     text-align: center;
@@ -456,36 +509,68 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-@media (max-width: 600px) {
-    .promo-image img {
-        width: 100%;  
-        height: auto; 
+/*RESPONSIVE PROMO*/
+@media (max-width: 768px) {
+    .promo-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .promo-text {
+        text-align: center;
+    }
+
+    .promo-text h2 {
+        font-size: 2em;
+    }
+
+    .promo-text p {
+        font-size: 1em;
     }
 }
+/*RESPONSIVE PROMO*/
+@media (max-width: 480px) {
+    .promo {
+        padding: 20px;
+    }
+
+    .promo-text h2 {
+        font-size: 1.5em;
+    }
+
+    .promo-text p {
+        font-size: 0.9em;
+    }
+
+    .promo-content {
+        gap: 15px;
+    }
+
+    .promo-image img {
+        border-radius: 5px;
+    }
+}
+/*CSS SPEDIZIONI*/
 .spedizioni {
     padding: 80px;
     background-color: #d6d3c8;
     text-align: center;
     color: #4a2c2a;
 }
-
 .shipping-info {
     max-width: 800px;
     margin: 0 auto;
 }
-
 .shipping-info h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
-
 .shipping-info p {
     font-size: 1.2em;
     line-height: 1.5;
     margin-bottom: 40px;
 }
-
 .shipping-info ul {
     text-align: left;
     padding: 0; 
@@ -497,22 +582,52 @@
     font-size: 1.1em;
     margin-bottom: 10px;
 }
-
 .shipping-info a {
     color: #4a2c2a;
     text-decoration: underline;
     transition: color 0.3s;
 }
-
 .shipping-info a:hover {
     color: #f8f4f0;
 }
-
+/* RESPONSIVE SPEDIZIONI*/
+@media (max-width: 768px) {
+    .spedizioni {
+        padding: 40px;
+    }
+    .shipping-info h2 {
+        font-size: 2em;
+    }
+    .shipping-info p {
+        font-size: 1em;
+    }
+    .shipping-info ul li {
+        font-size: 1em;
+    }
+}
+/* RESPONSIVE SPEDIZIONI*/
+@media (max-width: 480px) {
+    .spedizioni {
+        padding: 20px;
+    }
+    .shipping-info {
+        max-width: 100%;
+    }
+    .shipping-info h2 {
+        font-size: 1.8em;
+    }
+    .shipping-info p {
+        font-size: 0.9em;
+    }
+    .shipping-info ul {
+        width: 100%;
+    }
+   }
+/*CSS ISCRIZIONE FORM*/
  {
-   box-sizing: border-box;
+box-sizing: border-box;
     margin: 0;
     padding: 0;
-  
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -573,6 +688,7 @@ button {
 button:hover {
     background-color: #bfa780;
 }
+/*CSS FOUNDER*/
 #about-founder {
     background-color: #d6d3c8;
     color: #333;
@@ -600,73 +716,45 @@ h3 { font-family: 'Great Vibes', cursive;
     line-height: 1.6;
     margin-bottom: 15px;
 }
-
-/* Media queries per schermi più piccoli */
+/* RESPONSIVE FOUNDER*/
 @media (max-width: 768px) {
-    .spedizioni {
-        padding: 40px;
-    }
-    .shipping-info h2 {
-        font-size: 2em;
-    }
-    .shipping-info p, .shipping-info ul li {
-        font-size: 1em;
-    }
-    .newsletter-section {
-        padding: 20px 0;
-    }
-    h2, h4 {
-        font-size: 2em;
-    }
-    .newsletter-form {
-        padding: 15px;
-    }
-    button {
-        width: 80%;
-    }
     #about-founder {
         padding: 30px 0;
     }
-    #about-founder .section-title h2, h3 {
-        font-size: 1.8em;
+    #about-founder .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #about-founder .section-title h2 {
+        font-size: 1.5em;
+    }
+    h3 {
+        font-size: 2em;
     }
     #about-founder .about-founder-content p {
         font-size: 1rem;
     }
 }
-
+/* RESPONSIVE FOUNDER*/
 @media (max-width: 480px) {
-    .spedizioni {
-        padding: 20px;
-    }
-    .shipping-info h2 {
-        font-size: 1.8em;
-    }
-    .shipping-info p, .shipping-info ul li {
-        font-size: 0.9em;
-    }
-    .newsletter-section {
-        padding: 15px 0;
-    }
-    h2, h4 {
-        font-size: 1.8em;
-    }
-    .newsletter-form {
-        padding: 10px;
-    }
-    button {
-        width: 100%;
-    }
     #about-founder {
         padding: 20px 0;
     }
-    #about-founder .section-title h2, h3 {
-        font-size: 1.5em;
+    #about-founder .container {
+        width: 95%;
+        margin: 0 auto;
+    }
+    #about-founder .section-title h2 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1.8em;
     }
     #about-founder .about-founder-content p {
         font-size: 0.9rem;
-    }
+    } 
 }
+/* CSS RECENSIONI */
  body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -679,6 +767,7 @@ h4 {
     margin-bottom: 20px;
  color: #4a2c2a
    }
+
 .reviews-section {
     position: relative;
     width: 60%;
@@ -686,12 +775,10 @@ h4 {
     overflow: hidden;
     padding: 20px 0;
 }
-
 .reviews-slider {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-
 .review {
     position: relative;
     min-width: 100%;
@@ -699,7 +786,6 @@ h4 {
     padding: 20px; 
     text-align: center;
 }
-
 .review-image {
     border-radius: 50%;
     width: 100px;
@@ -708,27 +794,22 @@ h4 {
     margin-bottom: 10px;
     transition: transform 0.3s ease-in-out;
 }
-
 .review-image:hover {
     transform: scale(1.5); 
 }
-
 .review-content {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .stars {
     margin-top: 10px;
 }
-
 .star {
     font-size: 1.5rem;
     color: #e4c29f;
 }
-
 .prev,
 .next {
     position: absolute;
@@ -748,27 +829,73 @@ h4 {
     align-items: center;
     justify-content: center;
 }
-
 .prev {
     left: 10px; 
 }
-
 .next {
     right: 10px; 
 }
-
+/*RESPONSIVE RECENSIONI*/
 @media (max-width: 768px) {
-    .review {
-        width: 90%; /* Riduce la larghezza delle recensioni su schermi più piccoli */
-        max-width: 250px; /* Riduce la larghezza massima delle recensioni su schermi più piccoli */
-        margin-right: 10px;
+    .reviews-section {
+        width: 80%;
+        padding: 10px 0;
     }
-    
+    .review {
+        padding: 15px; 
+    }
     .review-image {
-        max-width: 120px; /* Riduce la larghezza massima dell'immagine su schermi più piccoli */
+        width: 80px;
+        height: 80px;
+    }
+    .review-content {
+        padding: 15px;
+    }
+    .prev,
+    .next {
+        padding: 10px;
+        font-size: 1rem;
+        height: 40px;
+        width: 40px;
+    }
+    .prev {
+        left: 5px;
+    }
+    .next {
+        right: 5px;
     }
 }
-
+/*RESPONSIVE RECENSIONI*/
+@media (max-width: 480px) {
+    .reviews-section {
+        width: 90%;
+        padding: 10px 0;
+    }
+    .review {
+        padding: 10px; 
+    }
+    .review-image {
+        width: 60px;
+        height: 60px;
+    }
+    .review-content {
+        padding: 10px;
+    }
+    .prev,
+    .next {
+        padding: 8px;
+        font-size: 0.9rem;
+        height: 35px;
+        width: 35px;
+    }
+    .prev {
+        left: 3px;
+    }
+    .next {
+        right: 3px;
+    }
+}
+/*CSS MAPPA*/
 .section-title {
     text-align: center;
     font-size: 3rem;
@@ -795,6 +922,28 @@ h4 {
     height: 450px;
     border: none;
 }
+/* RESPONSIVE MAPPA */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2.5rem;
+    }
+    .map-container iframe {
+        height: 350px;
+    }
+}
+/* RESPONSIVE MAPPA */
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    .map-container {
+        width: 100%;
+    }
+    .map-container iframe {
+        height: 250px;
+    }
+}
+/*CSS SCROLL BUTTONS*/
  .scroll-buttons {
     position: fixed;
     bottom: 20px;
@@ -821,6 +970,30 @@ h4 {
 .scroll-button:hover {
     background-color: #d6d3c8;
 }
+  
+  /* RESPONSIVE SCROLL BUTTON*/
+@media (max-width: 768px) {
+    .scroll-buttons {
+        bottom: 10px;
+        right: 10px;
+    }
+    .scroll-button {
+        width: 25px;
+        height: 25px;
+    }
+}
+/* RESPONSIVE SCROLL BUTTON*/
+@media (max-width: 480px) {
+    .scroll-buttons {
+        bottom: 5px;
+        right: 5px;
+    }
+    .scroll-button {
+        width: 20px;
+        height: 20px;
+    }
+}
+/*FOOTER CSS*/
  footer {
   background-color: #4a2c2a;
   color: #fff;
@@ -830,43 +1003,29 @@ h4 {
 footer p {
   margin: 10;
 }
-
-@media (max-width: 768px) {
-    .section-title {
-        font-size: 2.5rem;
+ @media (max-width: 768px) {
+    footer {
+        padding: 20px;
     }
-
-    .map-container {
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    .scroll-buttons {
-        bottom: 10px;
-        right: 10px;
+    footer p {
+        font-size: 0.9em; /* Riduce leggermente la dimensione del testo */
+        margin: 8px;
     }
 }
-
+/*RESPONSIVE FOOTER*/
 @media (max-width: 480px) {
-    .section-title {
-        font-size: 2rem;
+    footer {
+        padding: 15px;
     }
-
-    .map-container {
-        width: 100%;
-        padding: 0 5px;
+    footer p {
+        font-size: 0.8em; /* Riduce ulteriormente la dimensione del testo */
+        margin: 5px;
     }
-
-    .scroll-button {
-        width: 25px;
-        height: 25px;
-    }
-}
-
-body {
+} 
+/* POPUP CSS */
+.body {
     font-family: Arial, sans-serif;
 }
-
 #popup {
     display: none;
     position: fixed;
@@ -879,7 +1038,6 @@ body {
     align-items: center;
     z-index: 1000; 
 }
-
 .popup-content {
     background-color: white;
     padding: 20px;
@@ -890,7 +1048,6 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative; 
 }
-
 .close-popup {
     position: absolute;
     top: 5px;
@@ -898,28 +1055,23 @@ body {
     cursor: pointer;
     font-size: 30px;
 }
-
 .popup-content h2, .popup-content p, .popup-content a {
     color: #6d4b3f; 
 }
-
 .popup-content h2 {
     margin-top: 0;
     font-size: 2.5em;
    line-height: 1.3;
 }
-
 .popup-content p {
     font-size: 1.3em;
    line-height: 1.3;
 }
-
 #subscribe-form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 #subscribe-form input[type="email"] {
     padding: 10px;
     margin-bottom: 22px;
@@ -928,7 +1080,6 @@ body {
     width: 85%;
     font-size: 1.2em;
 }
-
 #subscribe-form button {
     padding: 10px;
     border: 1px solid #ccc;
@@ -939,34 +1090,63 @@ body {
     border: none;
     font-size: 1.3em;
 }
-
 #subscribe-form button:hover {
     background-color:   #A89984
 }
-
-/* Responsive Design */
-@media (max-width: 600px) {
+/* RESPONSIVE POPUP */
+@media (max-width: 768px) {
     .popup-content {
         width: 90%;
         padding: 15px;
     }
-
+    .close-popup {
+        font-size: 25px;
+        top: 10px;
+        right: 10px;
+    }
     .popup-content h2 {
-        font-size: 1.2em;
+        font-size: 2em;
     }
-
     .popup-content p {
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
-
     #subscribe-form input[type="email"] {
-        font-size: 0.9em;
+        width: 90%;
+        font-size: 1em;
     }
-
     #subscribe-form button {
-        font-size: 0.9em;
-        padding: 8px;
+        font-size: 1.1em;
     }
+   }
+
+/*RESPONSIVE POPUP*/
+@media (max-width: 480px) {
+    .popup-content {
+        width: 95%;
+        padding: 10px;
+    }
+    .close-popup {
+        font-size: 20px;
+        top: 8px;
+        right: 8px;
+    }
+    .popup-content h2 {
+        font-size: 1.8em;
+    }
+    .popup-content p {
+        font-size: 1em;
+    }
+    #subscribe-form input[type="email"] {
+        width: 95%;
+        font-size: 0.9em;
+    }
+    #subscribe-form button {
+        font-size: 1em;
+    }
+}
+
+
+
 
 
 

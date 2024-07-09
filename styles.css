@@ -128,6 +128,31 @@
     margin: 0;
 }
 
+/* Media queries per schermi più piccoli */
+@media (max-width: 768px) {
+    .banner {
+        height: 60vh; /* Riduci l'altezza per schermi più piccoli */
+    }
+    .banner h1 {
+        font-size: 5em; /* Riduci la dimensione del font per il titolo */
+    }
+    .banner p {
+        font-size: 2em; /* Riduci la dimensione del font per il paragrafo */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 50vh; /* Riduci ulteriormente l'altezza per schermi ancora più piccoli */
+    }
+    .banner h1 {
+        font-size: 3em; /* Riduci ulteriormente la dimensione del font per il titolo */
+    }
+    .banner p {
+        font-size: 1.5em; /* Riduci ulteriormente la dimensione del font per il paragrafo */
+    }
+}
+
 @media (max-width: 768px) {
     
     .burger-menu {
@@ -162,12 +187,6 @@
     .nav-links ul {
         flex-direction: column;
         gap: 10px;
-    }
-    .banner h1 {
-        font-size: 2em;
-    }
-    .banner p {
-        font-size: 1.5em;
     }
 }
 .side-menu.active {

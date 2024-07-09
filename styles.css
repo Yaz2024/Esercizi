@@ -71,7 +71,7 @@
     .nav-links {
     display: flex;
     justify-content: center;
-    padding: 16px 0;
+    padding: 26px 0;
 }
 
 .nav-links ul {
@@ -868,7 +868,6 @@ body {
         font-size: 0.9em;
         padding: 8px;
     }
-
 
 
 

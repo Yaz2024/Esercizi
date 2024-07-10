@@ -992,64 +992,48 @@ h4 {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    z-index: 999; /* Assicurati che i pulsanti siano sopra gli altri contenuti */
 }
-
 .scroll-button {
-    width: 40px; /* Modifica la larghezza per adattarla meglio sui dispositivi mobili */
-    height: 40px; /* Modifica l'altezza per adattarla meglio sui dispositivi mobili */
+    display: block;
+    width: 30px;
+    height: 30px;
     background-color: #d6d3c8;
     border: 1px solid #ccc;
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s;
-    display: flex; /* Per centrare l'icona all'interno del cerchio */
-    justify-content: center; /* Per centrare l'icona all'interno del cerchio */
-    align-items: center; /* Per centrare l'icona all'interno del cerchio */
 }
-
 .scroll-button img {
-    max-width: 100%; /* L'immagine non sforerà mai la larghezza del pulsante */
-    max-height: 100%; /* L'immagine non sforerà mai l'altezza del pulsante */
-    width: auto; /* Assicura che l'immagine mantenga le proporzioni originali */
-    height: auto; /* Assicura che l'immagine mantenga le proporzioni originali */
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
 }
-
+.scroll-button:hover {
+    background-color: #d6d3c8;
+}
+  
+  /* RESPONSIVE SCROLL BUTTON*/
 @media (max-width: 768px) {
     .scroll-buttons {
-        bottom: 10px; /* Modifica la distanza dal fondo per dispositivi di dimensioni più piccole */
-        right: 10px; /* Modifica la distanza dalla destra per dispositivi di dimensioni più piccole */
+        bottom: 10px;
+        right: 10px;
     }
-
     .scroll-button {
-        width: 30px; /* Riduci ulteriormente la larghezza per dispositivi più piccoli */
-        height: 30px; /* Riduci ulteriormente l'altezza per dispositivi più piccoli */
-    }
-
-    .scroll-button img {
-        max-width: 70%; /* Riduci ulteriormente la larghezza massima dell'immagine per dispositivi più piccoli */
-        max-height: 70%; /* Riduci ulteriormente l'altezza massima dell'immagine per dispositivi più piccoli */
+        width: 25px;
+        height: 25px;
     }
 }
-
+/* RESPONSIVE SCROLL BUTTON*/
 @media (max-width: 480px) {
     .scroll-buttons {
-        bottom: 5px; /* Modifica la distanza dal fondo per dispositivi più piccoli */
-        right: 5px; /* Modifica la distanza dalla destra per dispositivi più piccoli */
+        bottom: 5px;
+        right: 5px;
     }
-
     .scroll-button {
-        width: 25px; /* Riduci ulteriormente la larghezza per dispositivi molto piccoli */
-        height: 25px; /* Riduci ulteriormente l'altezza per dispositivi molto piccoli */
-    }
-
-    .scroll-button img {
-        max-width: 60%; /* Riduci ulteriormente la larghezza massima dell'immagine per dispositivi molto piccoli */
-        max-height: 60%; /* Riduci ulteriormente l'altezza massima dell'immagine per dispositivi molto piccoli */
+        width: 20px;
+        height: 20px;
     }
 }
-
 /*FOOTER CSS*/
  footer {
   background-color: #4a2c2a;

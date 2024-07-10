@@ -690,7 +690,6 @@ button:hover {
     background-color: #8a6b5f;
 }
 
-
 /* RESPONSIVE ISCRIZIONE */
 @media (max-width: 768px) {
     .container {
@@ -703,12 +702,19 @@ button:hover {
     .newsletter-form {
         padding: 15px; 
     }
+    .form-group {
+        margin-bottom: 15px; /* Aggiungi spazio tra le form-group */
+    }
     .form-group input {
-        width: 100%; 
+        width: calc(100% - 20px); /* Larghezza ridotta per considerare il padding */
+        padding: 10px; /* Aggiungi padding ai bordi interni del campo di input */
+        font-size: 1em; /* Imposta la dimensione del carattere desiderata */
     }
     button {
-        width: 100%; 
+        width: calc(100% - 20px); /* Larghezza ridotta per considerare il padding */
         margin-top: 10px; 
+        padding: 10px; /* Aggiungi padding al pulsante */
+        font-size: 1em; /* Imposta la dimensione del carattere desiderata */
     }
 }
 
@@ -717,15 +723,20 @@ button:hover {
     h2 {
         font-size: 1.5em; 
     }
-
     .newsletter-form {
         padding: 10px; 
     }
-
     .form-group input {
-        font-size: 0.9rem; 
+        width: calc(100% - 20px); /* Larghezza ridotta per considerare il padding */
+        font-size: 0.9em; /* Riduci leggermente la dimensione del carattere */
+    }
+    button {
+        width: calc(100% - 20px); /* Larghezza ridotta per considerare il padding */
+        padding: 10px; /* Aggiungi padding al pulsante */
+        font-size: 0.9em; /* Riduci leggermente la dimensione del carattere */
     }
 }
+
 /*CSS FOUNDER*/
 #about-founder {
     background-color: #d6d3c8;

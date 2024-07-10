@@ -6,13 +6,13 @@
     <meta name="description" content="AraBeauty - Cosmesi Naturale. Scopri la nostra linea di cosmetici naturali ispirati alla tradizione araba.">
     <meta name="keywords" content="AraBeauty, cosmesi naturale, bellezza, prodotti naturali, tradizione araba">
     
-       <title>AraBeauty - Cosmesi Naturale e Prodotti di Bellezza Orientali</title>
+    <title>Arabeauty</title>
     <!-- FONT LINK-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <!-- FAVICON HORUS EYE-->
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/256/110/110233.png" type="image/x-icon">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/256/110/110233.png" type="image/png">
 </head>
 <body itemscope itemtype="https://schema.org/WebPage">
     <!-- HEADER DIV'S BURGER E SIDE MENU -->
@@ -140,16 +140,15 @@
         </div>
     </section>
     <!-- SECTION CLASS SEDE -->
- <section id="sede" class="sede-section">
-    <h2 class="section-title">La nostra sede</h2>
-    <div class="map-container">
-        <iframe
-   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.2508650701595!2d9.204215615785875!3d45.45331284364352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6ba4053e1bb%3A0x6a3c16b3b29b7a6c!2sVia%20Giovanni%20Bellezza%2C%20123%2C%2020129%20Milano%20MI%2C%20Italy!5e0!3m2!1sen!2sus!4v1689721189393!5m2!1sen!2sus"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            title="Mappa della nostra sede a Milano">
-        </iframe>
-    </div>
-</section>                                                                                                                                                  
+    <section class="sede" id="sede">
+        <div class="content">
+            <h2>Sede</h2>
+            <p>
+                La nostra sede operativa si trova nel cuore della città, offrendo un facile accesso a tutti i nostri clienti. Siamo orgogliosi di essere parte di una comunità vibrante e di contribuire all'economia locale.
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12535.850031037727!2d12.4527322!3d41.9027831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61bafab1a511%3A0x7b64c1a6e37ddc2f!2sVatican%20City!5e0!3m2!1sen!2sit!4v1605645371275!5m2!1sen!2sit" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </section>
     <!-- SECTION CLASS SPEDIZIONI -->
     <section class="spedizioni" id="spedizioni">
         <div class="content">
@@ -173,61 +172,12 @@
             <a href="mailto:info@arabeauty.com"><i class="fas fa-envelope"></i></a>
         </div>
     </footer>
-    <script>
-      //SCRIPT BURGER SIDE MENU-RECENSIONI 
-      document.getElementById('burger-menu').addEventListener('click', function() {
-            document.getElementById('side-menu').classList.add('active');
-        });
-
-        document.getElementById('close-btn').addEventListener('click', function() {
-            document.getElementById('side-menu').classList.remove('active');
-});
-    let currentReview = 0;
-
-function showReview(index) {
-    const slider = document.getElementById('reviews-slider');
-    const reviews = document.querySelectorAll('.review');
-    if (index >= reviews.length) {
-        currentReview = 0;
-    } else if (index < 0) {
-        currentReview = reviews.length - 1;
-    } else {
-        currentReview = index;
-    }
-    slider.style.transform = `translateX(-${currentReview * 100}%)`;
-}
-
-function prevReview() {
-    showReview(currentReview - 1);
-}
-
-function nextReview() {
-    showReview(currentReview + 1);
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    showReview(currentReview);
-});
-      document.addEventListener('DOMContentLoaded', function() {
-        
-    // SCRIPT POPUP 
-    // Show the popup when the page loads
-        document.getElementById('popup').style.display = 'flex';
-    // Close the popup when the close button is clicked
-    document.getElementById('close-popup').addEventListener('click', function() {
-     document.getElementById('popup').style.display = 'none';
-    });
-    // Close the popup when clicking outside of the popup content
-    window.addEventListener('click', function(event) {
-        if (event.target == document.getElementById('popup')) {
-            document.getElementById('popup').style.display = 'none';
-        }
-    });
-});
-     </script>
-  
+    <!-- SCRIPT LINK -->
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
 
 
 

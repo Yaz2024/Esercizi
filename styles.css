@@ -123,37 +123,6 @@
     font-size: 3em;
     margin: 0;
 }
-
-/* responsive banner */
-@media (max-width: 768px) {
-    .banner h1 {
-        font-size: 5em; /* Ridurre la dimensione del testo */
-    }
-    .banner p {
-        font-size: 1.5em; /* Ridurre la dimensione del testo */
-    }
-    .banner-content {
-        padding: 10px; /* Ridurre il padding */
-    }
-    .banner {
-        padding: 10px; /* Ridurre il padding del banner se necessario */
-    }
-}
-/* responsive banner */
-@media (max-width: 480px) {
-    .banner h1 {
-        font-size: 3em; /* Ridurre ulteriormente la dimensione del testo */
-    }
-    .banner p {
-        font-size: 1em; /* Ridurre ulteriormente la dimensione del testo */
-    }
-    .banner-content {
-        padding: 5px; /* Ridurre ulteriormente il padding */
-    }
-    .banner {
-        padding: 5px; /* Ridurre ulteriormente il padding del banner se necessario */
-    }
-}
 /* RESPONSIVE BURGER-SIDE MENU E LINKS*/
 @media (max-width: 768px) {
     .burger-menu {
@@ -187,6 +156,12 @@
     .nav-links ul {
         flex-direction: column;
         gap: 10px;
+    }
+    .banner h1 {
+        font-size: 2em;
+    }
+    .banner p {
+        font-size: 1.5em;
     }
 }
 /* CSS ABOUT US */
@@ -648,9 +623,10 @@
         width: 100%;
     }
    }
+
 /*CSS ISCRIZIONE FORM*/
  {
-box-sizing: border-box;
+   box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -711,8 +687,45 @@ button {
     transition: background-color 0.3s ease;
 }
 button:hover {
-    background-color: #bfa780;
+    background-color: #8a6b5f;
 }
+
+/* RESPONSIVE ISCRIZIONE */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px; 
+    }
+    h2 {
+        font-size: 2em; 
+    }
+    .newsletter-form {
+        padding: 15px; 
+    }
+    .form-group input {
+        width: 100%; 
+    }
+    button {
+        width: 100%; 
+        margin-top: 10px; 
+    }
+}
+
+/* RESPONSIVE ISCRIZIONE */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5em; 
+    }
+
+    .newsletter-form {
+        padding: 10px; 
+    }
+
+    .form-group input {
+        font-size: 0.9rem; 
+    }
+}
+
 /*CSS FOUNDER*/
 #about-founder {
     background-color: #d6d3c8;
@@ -741,6 +754,7 @@ h3 { font-family: 'Great Vibes', cursive;
     line-height: 1.6;
     margin-bottom: 15px;
 }
+
 /* RESPONSIVE FOUNDER*/
 @media (max-width: 768px) {
     #about-founder {
@@ -760,6 +774,7 @@ h3 { font-family: 'Great Vibes', cursive;
         font-size: 1rem;
     }
 }
+
 /* RESPONSIVE FOUNDER*/
 @media (max-width: 480px) {
     #about-founder {
@@ -779,6 +794,7 @@ h3 { font-family: 'Great Vibes', cursive;
         font-size: 0.9rem;
     } 
 }
+
 /* CSS RECENSIONI */
  body {
     font-family: 'Roboto', sans-serif;
@@ -995,6 +1011,29 @@ h4 {
 .scroll-button:hover {
     background-color: #d6d3c8;
 }
+  
+  /* RESPONSIVE SCROLL BUTTON*/
+@media (max-width: 768px) {
+    .scroll-buttons {
+        bottom: 10px;
+        right: 10px;
+    }
+    .scroll-button {
+        width: 25px;
+        height: 25px;
+    }
+}
+/* RESPONSIVE SCROLL BUTTON*/
+@media (max-width: 480px) {
+    .scroll-buttons {
+        bottom: 5px;
+        right: 5px;
+    }
+    .scroll-button {
+        width: 20px;
+        height: 20px;
+    }
+}
 /*FOOTER CSS*/
  footer {
   background-color: #4a2c2a;
@@ -1119,9 +1158,6 @@ footer p {
     #subscribe-form button {
         font-size: 1.1em;
     }
-    .scroll-buttons {
-        bottom: 10px;
-        right: 10px;
    }
 
 /*RESPONSIVE POPUP*/
@@ -1147,10 +1183,6 @@ footer p {
     }
     #subscribe-form button {
         font-size: 1em;
-    }
-    .scroll-button {
-        width: 25px;
-        height: 25px;
     }
 }
 

@@ -123,6 +123,37 @@
     font-size: 3em;
     margin: 0;
 }
+
+/* responsive banner */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 5em; /* Ridurre la dimensione del testo */
+    }
+    .banner p {
+        font-size: 1.5em; /* Ridurre la dimensione del testo */
+    }
+    .banner-content {
+        padding: 10px; /* Ridurre il padding */
+    }
+    .banner {
+        padding: 10px; /* Ridurre il padding del banner se necessario */
+    }
+}
+/* responsive banner */
+@media (max-width: 480px) {
+    .banner h1 {
+        font-size: 3em; /* Ridurre ulteriormente la dimensione del testo */
+    }
+    .banner p {
+        font-size: 1em; /* Ridurre ulteriormente la dimensione del testo */
+    }
+    .banner-content {
+        padding: 5px; /* Ridurre ulteriormente il padding */
+    }
+    .banner {
+        padding: 5px; /* Ridurre ulteriormente il padding del banner se necessario */
+    }
+}
 /* RESPONSIVE BURGER-SIDE MENU E LINKS*/
 @media (max-width: 768px) {
     .burger-menu {
@@ -156,12 +187,6 @@
     .nav-links ul {
         flex-direction: column;
         gap: 10px;
-    }
-    .banner h1 {
-        font-size: 2em;
-    }
-    .banner p {
-        font-size: 1.5em;
     }
 }
 /* CSS ABOUT US */

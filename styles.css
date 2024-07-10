@@ -690,6 +690,7 @@ button:hover {
     background-color: #8a6b5f;
 }
 
+
 /* RESPONSIVE ISCRIZIONE */
 @media (max-width: 768px) {
     .container {
@@ -725,7 +726,6 @@ button:hover {
         font-size: 0.9rem; 
     }
 }
-
 /*CSS FOUNDER*/
 #about-founder {
     background-color: #d6d3c8;

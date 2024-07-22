@@ -1077,7 +1077,7 @@ footer p {
         padding: 20px;
     }
     footer p {
-        font-size: 0.9em; /* Riduce leggermente la dimensione del testo */
+        font-size: 0.9em; 
         margin: 8px;
     }
 }
@@ -1087,7 +1087,7 @@ footer p {
         padding: 15px;
     }
     footer p {
-        font-size: 0.8em; /* Riduce ulteriormente la dimensione del testo */
+        font-size: 0.8em; 
         margin: 5px;
     }
 } 

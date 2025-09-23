@@ -54,7 +54,6 @@ Per qualsiasi informazione,domanda,consiglio mettersi in contatto con i seguenti
 
 - Email: (info@arabeauty.com)
 - Sito: 	https://velvety-halva-c5080f.netlify.app/
-- Tel: +39 329 976 4612
 
 # License
 
